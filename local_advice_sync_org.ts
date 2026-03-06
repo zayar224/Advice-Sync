@@ -46,10 +46,7 @@ async function syncProducts() {
       "--no-zygote",
       "--disable-gpu",
       "--window-size=1920,1080",
-      "--disable-web-security",
-      "--disable-features=IsolateOrigins,site-per-process",
     ],
-    protocolTimeout: 300000, // Increase protocol timeout to 5 minutes
   });
 
   const page = await browser.newPage();
@@ -107,10 +104,6 @@ async function syncProducts() {
           "backpack",
           "sleeve",
           "cleaning",
-          "smartphone",
-          "compare",
-          "optical-disk-drive",
-          "tray-dvd",
         ];
 
         // Focus on product card links specifically
@@ -145,7 +138,7 @@ async function syncProducts() {
             if (!href) return;
 
             const lowerHref = href.toLowerCase();
-            const text = (a.innerText || a.textContent || "").toLowerCase();
+            const text = (a.innerText || "").toLowerCase();
 
             // Check if it's a product link
             const isProduct =
@@ -153,10 +146,8 @@ async function syncProducts() {
               !lowerHref.includes("search?keyword=");
             if (!isProduct) return;
 
-            // STRONGER notebook check: must have notebook/laptop/surface in URL OR text
-            const isNotebook =
-              notebookKeywords.some((k) => lowerHref.includes(k)) ||
-              notebookKeywords.some((k) => text.includes(k));
+            // Simple notebook check
+            const isNotebook = true; // Assume all search results for 'laptop' are notebooks
 
             if (isNotebook) {
               if (
@@ -164,16 +155,7 @@ async function syncProducts() {
                   (k) => lowerHref.includes(k) || text.includes(k),
                 )
               ) {
-                const hasThaiExclude =
-                  text.includes("กระเป๋า") ||
-                  text.includes("ซองใส่") ||
-                  text.includes("ฟิล์ม") ||
-                  text.includes("สายชาร์จ") ||
-                  text.includes("แบตเตอรี่");
-
-                if (!hasThaiExclude) {
-                  foundLinks.push(href);
-                }
+                foundLinks.push(href);
               }
             }
           } catch (e) {}
@@ -183,9 +165,6 @@ async function syncProducts() {
       const before = allLinks.size;
       links.forEach((l) => allLinks.add(l));
       const after = allLinks.size;
-      if (after > before) {
-        // We can't use log() here as it's not defined in page.evaluate context, but we are in the main process
-      }
       return after - before;
     };
 
@@ -408,7 +387,7 @@ async function syncProducts() {
 
             // 1. Look for prices in the buy box first (highest priority)
             let salePriceEl = buyBox?.querySelector(
-              ".item-price-sale, .d-add-cart-item-price, .product-price .price-special, .new-price, .price-sale, .special-price, .price-online, .sale-price, [class*='price-special'], [class*='price-sale'], [class*='price-online']",
+              ".item-price-sale, .d-add-cart-item-price, .product-price .price-special, .new-price, .price-sale, .special-price, .price-online, .sale-price, [class*='price-special'], [class*='price-sale']",
             );
             let originalPriceEl = buyBox?.querySelector(
               ".item-price-srp del, .list-installment-price-1, .price-before, strike, del, .old-price, .price-normal, [class*='price-before'], [class*='old-price']",
@@ -418,7 +397,7 @@ async function syncProducts() {
             if (!salePriceEl || !originalPriceEl) {
               const allPossiblePrices = Array.from(
                 mainInfo.querySelectorAll(
-                  ".item-price-sale, .item-price-srp del, .d-add-cart-item-price, .list-installment-price-1, .price-before, strike, del, .price-online, .price-special, .special-price, .price-normal, [class*='price-special'], [class*='price-sale'], [class*='price-before'], [class*='old-price'], [class*='price-online']",
+                  ".item-price-sale, .item-price-srp del, .d-add-cart-item-price, .list-installment-price-1, .price-before, strike, del, .price-online, .price-special, .special-price, .price-normal, [class*='price-special'], [class*='price-sale'], [class*='price-before'], [class*='old-price']",
                 ),
               );
 
@@ -440,8 +419,7 @@ async function syncProducts() {
                     el.classList.contains("d-add-cart-item-price") ||
                     el.className.includes("price-special") ||
                     el.className.includes("price-sale") ||
-                    el.className.includes("sale-price") ||
-                    el.className.includes("price-online"),
+                    el.className.includes("sale-price"),
                 );
               }
               if (!originalPriceEl) {
@@ -477,12 +455,6 @@ async function syncProducts() {
               }
             } catch (e) {}
 
-            // Thai price extraction helpers
-            const extractPrice = (text: string) => {
-              const match = text.replace(/,/g, "").match(/(\d+(?:\.\d+)?)/);
-              return match ? parseFloat(match[0]) : 0;
-            };
-
             let originalPriceText = originalPriceEl?.textContent?.trim() || "";
             let salePriceText = salePriceEl?.textContent?.trim() || "0";
 
@@ -509,8 +481,7 @@ async function syncProducts() {
               });
 
               if (node) {
-                const text = node.textContent || "";
-                const match = text.match(/[0-9,.]+/);
+                const match = node.textContent?.match(/[0-9,.]+/);
                 return match ? match[0] : "";
               }
               return "";
@@ -530,14 +501,15 @@ async function syncProducts() {
                 "ราคาพิเศษ",
                 "Special Price",
                 "ราคาออนไลน์",
-                "Online Price",
                 "Member Price",
                 "ราคาปัจจุบัน",
               ]);
             }
 
-            const rawOriginal = extractPrice(originalPriceText);
-            const rawSale = extractPrice(salePriceText);
+            const rawOriginal = parseFloat(
+              originalPriceText.replace(/[^0-9.]/g, ""),
+            );
+            const rawSale = parseFloat(salePriceText.replace(/[^0-9.]/g, ""));
 
             // Calculate original price from discount badge if needed
             let calculatedOriginal = rawOriginal;
@@ -550,7 +522,9 @@ async function syncProducts() {
                 /-(?:฿|THB)?\s*([0-9,.]+)/i,
               );
               if (discountMatch) {
-                const discountAmt = extractPrice(discountMatch[1]);
+                const discountAmt = parseFloat(
+                  discountMatch[1].replace(/[^0-9.]/g, ""),
+                );
                 calculatedOriginal = rawSale + discountAmt;
               }
             }
@@ -563,8 +537,6 @@ async function syncProducts() {
               calculatedOriginal,
               ldOriginalPrice,
             );
-
-            // If we found a higher original price, set it as 'price' and current as 'salePrice'
             if (finalOriginal > 0 && price > 0 && finalOriginal > price) {
               salePrice = price;
               price = finalOriginal;
@@ -646,24 +618,6 @@ async function syncProducts() {
               }
             });
 
-            // Convert to array and prioritize better quality/main images
-            let images = Array.from(imageSet);
-
-            // Sort to put better quality/main images first
-            images.sort((a, b) => {
-              const aBig = a.includes("BIG") || a.includes("OK") ? 1 : 0;
-              const bBig = b.includes("BIG") || b.includes("OK") ? 1 : 0;
-
-              if (aBig !== bBig) return bBig - aBig;
-
-              const aIdx = a.match(/_([0-9])\.jpg/)?.[1] || "9";
-              const bIdx = b.match(/_([0-9])\.jpg/)?.[1] || "9";
-              return parseInt(aIdx) - parseInt(bIdx);
-            });
-
-            // Final filter: ensure we don't have too many and they are unique
-            images = Array.from(new Set(images)).slice(0, 10);
-
             // Stock detection: Check for "Add to Cart" button or "Out of Stock" text
             const hasBuyBtn = !!document.querySelector(
               ".btn-add-cart, .btn-buy, .add-to-cart",
@@ -682,7 +636,7 @@ async function syncProducts() {
               specs,
               features,
               stock,
-              images: JSON.stringify(images),
+              images: Array.from(imageSet).slice(0, 10),
             };
           });
 
