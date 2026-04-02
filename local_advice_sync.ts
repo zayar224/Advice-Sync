@@ -27,16 +27,23 @@ const log = (m: string) => {
 const API_URL =
   process.env.API_URL || "https://kweelamin.com/api/admin/sync/advice";
 const SYNC_SECRET =
-  process.env.SYNC_SECRET || "gWkE7OYh78Kaid/YdLXno23CKFrkY4QDKuWRAwIBLQQ="; // Should match live server's NEXTAUTH_SECRET
+  process.env.SYNC_SECRET ||
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoib25saW5lIiwiaXNfbWVtYmVyIjpmYWxzZSwiaWF0IjoxNzc0ODY1MjQ0LCJleHAiOjE3NzQ4NzI0NDR9.TTi8eX4vwSrs2kd41N5x5veCtuC_Nm09xa-q3SEBbYg"; // Should match live server's NEXTAUTH_SECRET
 const HEADLESS = (process.env.HEADLESS ?? "true").toLowerCase() !== "false";
+const USER_AGENT =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
 puppeteer.use(StealthPlugin());
 
 async function syncProducts() {
   log("🚀 Starting Local Advice Scraper...");
 
-  const browser = await puppeteer.launch({
-    headless: HEADLESS, // Run in background without opening a browser window
+  const userDataDir = path.join(process.cwd(), "chrome_user_data");
+  log(`Using user data dir: ${userDataDir}`);
+
+  const launchOptions: any = {
+    headless: HEADLESS ? "new" : false,
+    userDataDir: userDataDir,
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
@@ -48,28 +55,70 @@ async function syncProducts() {
       "--window-size=1920,1080",
       "--disable-web-security",
       "--disable-features=IsolateOrigins,site-per-process",
+      "--disable-blink-features=AutomationControlled", // Mask automation
     ],
-    protocolTimeout: 300000, // Increase protocol timeout to 5 minutes
-  });
+    protocolTimeout: 300000,
+  };
+
+  // Add proxy if configured in env
+  if (process.env.FLARESOLVERR_URL) {
+    launchOptions.browserWSEndpoint = `${process.env.FLARESOLVERR_URL}`;
+  } else if (process.env.PROXY_SERVER) {
+    launchOptions.args.push(`--proxy-server=${process.env.PROXY_SERVER}`);
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
 
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 });
+  await page.setUserAgent(USER_AGENT);
+
+  // Set extra headers to look more like a real browser
+  await page.setExtraHTTPHeaders({
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "max-age=0",
+    "sec-ch-ua":
+      '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+  });
 
   try {
     log("Navigating to Advice home page...");
     await page.goto("https://www.advice.co.th/", {
       waitUntil: "networkidle2",
-      timeout: 90000,
+      timeout: 120000, // Increased timeout
     });
 
-    // Wait for manual verification if needed
-    await new Promise((r) => setTimeout(r, 5000));
+    // Check if we are still blocked
+    let homeTitle = await page.title();
+    if (
+      homeTitle.includes("Just a moment") ||
+      homeTitle.includes("Checking your browser")
+    ) {
+      log(
+        "⏳ Cloudflare challenge detected on home page. Waiting and attempting to look human...",
+      );
+
+      // Look human: move mouse and scroll a bit
+      for (let i = 0; i < 5; i++) {
+        await page.mouse.move(Math.random() * 500, Math.random() * 500);
+        await page.evaluate(() => window.scrollBy(0, Math.random() * 200));
+        await new Promise((r) => setTimeout(r, 2000 + Math.random() * 3000));
+        homeTitle = await page.title();
+        if (!homeTitle.includes("Just a moment")) break;
+      }
+    }
 
     log("Navigating to Advice search page...");
-    // The user's requested link which has 376 items
     await page.goto("https://www.advice.co.th/product/search?keyword=laptop", {
       waitUntil: "networkidle2",
-      timeout: 90000,
+      timeout: 120000,
     });
 
     // Wait more for content to be sure
@@ -83,7 +132,18 @@ async function syncProducts() {
       pageTitle.includes("Just a moment") ||
       pageTitle.includes("Access Denied")
     ) {
-      log("❌ Blocked by Cloudflare even locally. Try headful mode.");
+      log(
+        "❌ Blocked by Cloudflare even locally. Try headful mode (HEADLESS=false).",
+      );
+      // If we are still blocked, try one more wait
+      await new Promise((r) => setTimeout(r, 15000));
+      if ((await page.title()).includes("Just a moment")) {
+        await page.screenshot({ path: "cloudflare_blocked.png" });
+        log("📸 Screenshot saved to cloudflare_blocked.png");
+        throw new Error(
+          "Cloudflare bypass failed. Try running in headful mode (HEADLESS=false) and solving the challenge manually.",
+        );
+      }
     }
 
     // Handle "Show More Products" button if it exists
@@ -347,12 +407,34 @@ async function syncProducts() {
 
       const batchPromises = batch.map(async (link) => {
         const detailPage = await browser.newPage();
+        await detailPage.setUserAgent(USER_AGENT);
+        await detailPage.setViewport({ width: 1920, height: 1080 });
+
         try {
-          await detailPage.goto(link, {
-            waitUntil: "networkidle2",
-            timeout: 60000,
-          });
-          await new Promise((r) => setTimeout(r, 2000));
+          let success = false;
+          let retryCount = 0;
+          const maxRetries = 3;
+
+          while (retryCount < maxRetries && !success) {
+            try {
+              await detailPage.goto(link, {
+                waitUntil: "networkidle2",
+                timeout: 60000,
+              });
+              success = true;
+            } catch (err) {
+              retryCount++;
+              log(`⚠️ Retry ${retryCount}/${maxRetries} for ${link}: ${err}`);
+              await new Promise((r) => setTimeout(r, 5000));
+            }
+          }
+
+          if (!success) {
+            log(`❌ Failed to load ${link} after ${maxRetries} retries.`);
+            return;
+          }
+
+          await new Promise((r) => setTimeout(r, 2000 + Math.random() * 3000));
 
           const data = await detailPage.evaluate(() => {
             const name =
@@ -700,6 +782,12 @@ async function syncProducts() {
       });
 
       await Promise.all(batchPromises);
+
+      // Wait between batches
+      if (i + batchSize < productLinks.length) {
+        log(`⏳ Waiting between batches...`);
+        await new Promise((r) => setTimeout(r, 5000 + Math.random() * 5000));
+      }
     }
 
     log(`🎉 Scraping complete! Scraped ${scrapedData.length} products.`);

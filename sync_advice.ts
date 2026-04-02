@@ -16,6 +16,15 @@ const progressPath = path.join(
   "sync_advice.json",
 );
 
+const COOKIES_PATH = path.join(
+  process.cwd(),
+  "public",
+  "config",
+  "cookies_advice.json",
+);
+const USER_AGENT =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+
 function ensureProgressDir() {
   const dir = path.join(process.cwd(), "public", "config");
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -52,13 +61,17 @@ async function syncProducts() {
   let browser;
   let lastError;
 
+  const userDataDir = path.join(process.cwd(), "chrome_user_data");
+  console.log(`Using user data dir: ${userDataDir}`);
+
   for (const executablePath of possiblePaths) {
     try {
       console.log(
         `Trying browser path: ${executablePath || "Puppeteer bundled Chrome"}`,
       );
       browser = await puppeteer.launch({
-        headless: true,
+        headless: "new", // Always use new headless
+        userDataDir: userDataDir,
         args: [
           "--no-sandbox",
           "--disable-setuid-sandbox",
@@ -79,7 +92,7 @@ async function syncProducts() {
         ],
         protocolTimeout: 300000,
         executablePath,
-      });
+      } as any);
       console.log(
         `Successfully launched with: ${executablePath || "Puppeteer bundled Chrome"}`,
       );
