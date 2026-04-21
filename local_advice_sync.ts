@@ -3,6 +3,13 @@ import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
+import https from "https";
+import fetch from "node-fetch";
+
+// Create a custom HTTPS agent that ignores SSL errors (for testing)
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false,
+});
 
 dotenv.config();
 
@@ -26,9 +33,8 @@ const log = (m: string) => {
 // Configuration - Update these if needed
 const API_URL =
   process.env.API_URL || "https://kweelamin.com/api/admin/sync/advice";
-const SYNC_SECRET =
-  process.env.SYNC_SECRET ||
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoib25saW5lIiwiaXNfbWVtYmVyIjpmYWxzZSwiaWF0IjoxNzc0ODY1MjQ0LCJleHAiOjE3NzQ4NzI0NDR9.TTi8eX4vwSrs2kd41N5x5veCtuC_Nm09xa-q3SEBbYg"; // Should match live server's NEXTAUTH_SECRET
+const SYNC_SECRET = process.env.SYNC_SECRET;
+// "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoib25saW5lIiwiaXNfbWVtYmVyIjpmYWxzZSwiaWF0IjoxNzc1MTAzNDIyLCJleHAiOjE3NzUxMTA2MjJ9.e3V-L4UZQkyIJfOt2Wa4dHz7eRCAgddG6P9rY2E36N8"; // Should match live server's NEXTAUTH_SECRET
 const HEADLESS = (process.env.HEADLESS ?? "true").toLowerCase() !== "false";
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
@@ -37,6 +43,11 @@ puppeteer.use(StealthPlugin());
 
 async function syncProducts() {
   log("🚀 Starting Local Advice Scraper...");
+  if (!SYNC_SECRET) {
+    log("⚠️ WARNING: SYNC_SECRET is not defined in environment variables!");
+  } else {
+    log(`ℹ️ SYNC_SECRET is defined (length: ${SYNC_SECRET.length})`);
+  }
 
   const userDataDir = path.join(process.cwd(), "chrome_user_data");
   log(`Using user data dir: ${userDataDir}`);
@@ -57,7 +68,7 @@ async function syncProducts() {
       "--disable-features=IsolateOrigins,site-per-process",
       "--disable-blink-features=AutomationControlled", // Mask automation
     ],
-    protocolTimeout: 300000,
+    protocolTimeout: 600000, // Increased to 10 minutes
   };
 
   // Add proxy if configured in env
@@ -90,10 +101,29 @@ async function syncProducts() {
 
   try {
     log("Navigating to Advice home page...");
-    await page.goto("https://www.advice.co.th/", {
-      waitUntil: "networkidle2",
-      timeout: 120000, // Increased timeout
-    });
+    let homePageSuccess = false;
+    let homePageRetries = 0;
+    const maxHomePageRetries = 3;
+    while (!homePageSuccess && homePageRetries < maxHomePageRetries) {
+      try {
+        await page.goto("https://www.advice.co.th/", {
+          waitUntil: "domcontentloaded",
+          timeout: 180000, // 3 minutes timeout
+        });
+        homePageSuccess = true;
+      } catch (err) {
+        homePageRetries++;
+        log(
+          `⚠️ Home page navigation failed (retry ${homePageRetries}/${maxHomePageRetries}): ${err}`,
+        );
+        if (homePageRetries < maxHomePageRetries) {
+          await new Promise((r) => setTimeout(r, 3000));
+        }
+      }
+    }
+    if (!homePageSuccess) {
+      throw new Error("Failed to load home page after retries");
+    }
 
     // Check if we are still blocked
     let homeTitle = await page.title();
@@ -116,10 +146,32 @@ async function syncProducts() {
     }
 
     log("Navigating to Advice search page...");
-    await page.goto("https://www.advice.co.th/product/search?keyword=laptop", {
-      waitUntil: "networkidle2",
-      timeout: 120000,
-    });
+    let searchPageSuccess = false;
+    let searchPageRetries = 0;
+    const maxSearchPageRetries = 3;
+    while (!searchPageSuccess && searchPageRetries < maxSearchPageRetries) {
+      try {
+        await page.goto(
+          "https://www.advice.co.th/product/search?keyword=laptop",
+          {
+            waitUntil: "domcontentloaded",
+            timeout: 180000, // 3 minutes timeout
+          },
+        );
+        searchPageSuccess = true;
+      } catch (err) {
+        searchPageRetries++;
+        log(
+          `⚠️ Search page navigation failed (retry ${searchPageRetries}/${maxSearchPageRetries}): ${err}`,
+        );
+        if (searchPageRetries < maxSearchPageRetries) {
+          await new Promise((r) => setTimeout(r, 3000));
+        }
+      }
+    }
+    if (!searchPageSuccess) {
+      throw new Error("Failed to load search page after retries");
+    }
 
     // Wait more for content to be sure
     log("Waiting for search results to load...");
@@ -287,71 +339,76 @@ async function syncProducts() {
         ];
 
         let clicked = false;
-        for (const selector of buttonSelectors) {
-          const btn = await page.$(selector);
-          if (btn) {
-            const isVisible = await page.evaluate((el) => {
-              if (!el) return false;
-              const style = window.getComputedStyle(el);
-              return (
-                style &&
-                style.display !== "none" &&
-                style.visibility !== "hidden" &&
-                (el as HTMLElement).offsetWidth > 0 &&
-                (el as HTMLElement).offsetHeight > 0
+        try {
+          for (const selector of buttonSelectors) {
+            const btn = await page.$(selector);
+            if (btn) {
+              const isVisible = await page.evaluate((el) => {
+                if (!el) return false;
+                const style = window.getComputedStyle(el);
+                return (
+                  style &&
+                  style.display !== "none" &&
+                  style.visibility !== "hidden" &&
+                  (el as HTMLElement).offsetWidth > 0 &&
+                  (el as HTMLElement).offsetHeight > 0
+                );
+              }, btn);
+
+              if (isVisible) {
+                await btn.scrollIntoView();
+                await new Promise((r) => setTimeout(r, 1000));
+                await btn.click();
+                clicked = true;
+                log(`Clicked button with selector: ${selector}`);
+                break;
+              }
+            }
+          }
+
+          // Fallback to text search if no selector worked
+          if (!clicked) {
+            const textBtn = await page.evaluateHandle(() => {
+              const buttons = Array.from(
+                document.querySelectorAll(
+                  "button, a, div.btn, div.button, span.btn",
+                ),
               );
-            }, btn);
-
-            if (isVisible) {
-              await btn.scrollIntoView();
-              await new Promise((r) => setTimeout(r, 500));
-              await btn.click();
-              clicked = true;
-              log(`Clicked button with selector: ${selector}`);
-              break;
-            }
-          }
-        }
-
-        // Fallback to text search if no selector worked
-        if (!clicked) {
-          const textBtn = await page.evaluateHandle(() => {
-            const buttons = Array.from(
-              document.querySelectorAll(
-                "button, a, div.btn, div.button, span.btn",
-              ),
-            );
-            const targetTexts = [
-              "แสดงเพิ่ม",
-              "ดูเพิ่มเติม",
-              "SHOW MORE",
-              "LOAD MORE",
-              "แสดงสินค้าเพิ่ม",
-              "ดูสินค้าเพิ่มเติม",
-            ];
-            return buttons.find((b) => {
-              const text = (b.textContent || "").toUpperCase().trim();
-              const style = window.getComputedStyle(b);
-              const isVisible =
-                style &&
-                style.display !== "none" &&
-                style.visibility !== "hidden" &&
-                (b as HTMLElement).offsetWidth > 0 &&
-                (b as HTMLElement).offsetHeight > 0;
-              return isVisible && targetTexts.some((t) => text.includes(t));
+              const targetTexts = [
+                "แสดงเพิ่ม",
+                "ดูเพิ่มเติม",
+                "SHOW MORE",
+                "LOAD MORE",
+                "แสดงสินค้าเพิ่ม",
+                "ดูสินค้าเพิ่มเติม",
+              ];
+              return buttons.find((b) => {
+                const text = (b.textContent || "").toUpperCase().trim();
+                const style = window.getComputedStyle(b);
+                const isVisible =
+                  style &&
+                  style.display !== "none" &&
+                  style.visibility !== "hidden" &&
+                  (b as HTMLElement).offsetWidth > 0 &&
+                  (b as HTMLElement).offsetHeight > 0;
+                return isVisible && targetTexts.some((t) => text.includes(t));
+              });
             });
-          });
 
-          if (textBtn) {
-            const element = textBtn.asElement() as any;
-            if (element) {
-              await element.scrollIntoView();
-              await new Promise((r) => setTimeout(r, 500));
-              await element.click();
-              clicked = true;
-              log("Clicked button by text content fallback");
+            if (textBtn) {
+              const element = textBtn.asElement() as any;
+              if (element) {
+                await element.scrollIntoView();
+                await new Promise((r) => setTimeout(r, 1000));
+                await element.click();
+                clicked = true;
+                log("Clicked button by text content fallback");
+              }
             }
           }
+        } catch (loopErr) {
+          log(`⚠️ Error in 'Show More' click attempt: ${loopErr}`);
+          // Don't throw, just try to continue or break
         }
 
         if (clicked) {
@@ -418,8 +475,8 @@ async function syncProducts() {
           while (retryCount < maxRetries && !success) {
             try {
               await detailPage.goto(link, {
-                waitUntil: "networkidle2",
-                timeout: 60000,
+                waitUntil: "domcontentloaded",
+                timeout: 180000, // 3 minutes timeout
               });
               success = true;
             } catch (err) {
@@ -792,6 +849,25 @@ async function syncProducts() {
 
     log(`🎉 Scraping complete! Scraped ${scrapedData.length} products.`);
 
+    // Local Backup Storage Setup
+    const dataDir = path.join(process.cwd(), "data");
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const backupFile = path.join(dataDir, `scraped_data_${timestamp}.json`);
+
+    try {
+      if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+      }
+      fs.writeFileSync(
+        backupFile,
+        JSON.stringify(scrapedData, null, 2),
+        "utf8",
+      );
+      log(`💾 Local backup saved to: ${backupFile}`);
+    } catch (backupErr) {
+      log(`⚠️ Failed to save local backup: ${backupErr}`);
+    }
+
     if (scrapedData.length === 0) {
       log(
         "❌ No products were scraped. Skipping upload to prevent data loss on the live server.",
@@ -801,26 +877,94 @@ async function syncProducts() {
 
     log(`📤 Uploading data to live server (${API_URL})...`);
 
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-sync-secret": SYNC_SECRET,
-      },
-      body: JSON.stringify({
-        products: scrapedData,
-        categoryName: "Notebook",
-      }),
-    });
+    const uploadChunkWithRetry = async (chunk: any[], retries = 3) => {
+      for (let attempt = 1; attempt <= retries; attempt++) {
+        try {
+          log(`Attempt ${attempt} to upload data...`);
+          if (typeof fetch === "undefined") {
+            throw new Error(
+              "fetch is not available. Please use Node.js 18+ or install node-fetch.",
+            );
+          }
 
-    const result = await response.json();
-    if (response.ok) {
-      log(`✨ SUCCESS: ${result.message}`);
-    } else {
-      log(`❌ UPLOAD FAILED: ${result.error}`);
+          const body = JSON.stringify({
+            products: chunk,
+            categoryName: "Notebook",
+          });
+          log(`   Payload size: ${(body.length / 1024).toFixed(2)} KB`);
+
+          // Use timeout option for node-fetch v2 instead of AbortController
+          const fetchOptions: any = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "x-sync-secret": SYNC_SECRET || "",
+              "User-Agent": USER_AGENT,
+            },
+            body: body,
+            timeout: 300000, // 5 minutes timeout
+          };
+
+          const response = await fetch(API_URL, fetchOptions);
+
+          let result;
+          try {
+            result = await response.json();
+          } catch (parseErr) {
+            const text = await response.text();
+            log(`⚠️ Failed to parse JSON response. Response text: ${text}`);
+            throw parseErr;
+          }
+
+          if (response.ok) {
+            log(`✨ Chunk Success: ${result.message}`);
+            return true;
+          } else {
+            log(`❌ Chunk Upload Failed: ${result.error || "Unknown error"}`);
+            log(
+              `   Response status: ${response.status} ${response.statusText}`,
+            );
+            if (response.status >= 500) {
+              log(`   Server error, might retry...`);
+            } else {
+              return false;
+            }
+          }
+        } catch (fetchErr) {
+          log(`💥 Chunk Attempt ${attempt} failed: ${fetchErr}`);
+          if (attempt === retries) throw fetchErr;
+          log(`   Waiting before next attempt...`);
+          await new Promise((r) => setTimeout(r, 5000));
+        }
+      }
+      return false;
+    };
+
+    const uploadBatchSize = 1;
+    let totalSynced = 0;
+
+    try {
+      for (let i = 0; i < scrapedData.length; i += uploadBatchSize) {
+        const chunk = scrapedData.slice(i, i + uploadBatchSize);
+        log(
+          `Uploading chunk ${Math.floor(i / uploadBatchSize) + 1} of ${Math.ceil(scrapedData.length / uploadBatchSize)} (${chunk.length} products)...`,
+        );
+        const success = await uploadChunkWithRetry(chunk, 3);
+        if (success) {
+          totalSynced += chunk.length;
+        } else {
+          log(`⚠️ Failed to upload chunk starting at index ${i}`);
+        }
+      }
+      log(`✅ Upload complete! Total products synced: ${totalSynced}`);
+    } catch (finalErr) {
+      log(`💥 Final upload error: ${finalErr}`);
     }
   } catch (error) {
     log(`💥 Sync failed: ${String(error)}`);
+    if (error instanceof Error && error.stack) {
+      log(`   Stack trace: ${error.stack}`);
+    }
   } finally {
     await browser.close();
     log("👋 Done!");

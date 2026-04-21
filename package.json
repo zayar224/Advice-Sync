@@ -7,6 +7,7 @@
     "sync": "ts-node local_advice_sync.ts",
     "sync:headful": "HEADLESS=false ts-node local_advice_sync.ts",
     "sync:env": "ts-node local_advice_sync.ts",
+    "upload": "ts-node upload_backup.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
   "dependencies": {
     "@prisma/client": "^7.6.0",
     "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0",
     "prisma": "^7.6.0",
     "puppeteer": "^23.9.0",
     "puppeteer-extra": "^3.3.6",

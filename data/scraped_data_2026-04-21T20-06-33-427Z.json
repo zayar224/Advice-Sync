@@ -1,0 +1,1635 @@
+[
+  {
+    "name": "Notebook Asus Zenbook 14 UX3405CA-BLUE532WA (Ponder Blue)",
+    "price": 33990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178874/A0178874OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Asus Vivobook 15 M1502NAQ-BQ714WA (Quiet Blue)",
+    "price": 20990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178922/A0178922OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Asus Vivobook 14 M1404FA-EB562WA (Cool Silver)",
+    "price": 15990,
+    "salePrice": null,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "ASUS"
+      },
+      {
+        "label": "Model",
+        "value": "Vivobook Go 14 (M1404FA-EB562WA)"
+      },
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 5 7520U (2.8GHz up to 4.3GHz, 2MB L2 / 4MB L3 Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "AMD SoC Platform"
+      },
+      {
+        "label": "CPU Series",
+        "value": "Ryzen 5"
+      },
+      {
+        "label": "AI Engine",
+        "value": "None"
+      },
+      {
+        "label": "Graphics",
+        "value": "AMD Radeon Graphics (Integrated Graphics)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "14.0\" 1920x1080 (FHD) 16:9, IPS, 60Hz, 250nits, Anti-glare, 45% NTSC, 83% Screen-to-body ratio"
+      },
+      {
+        "label": "Main Memory",
+        "value": "16GB LPDDR5 Onboard memory"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "N/A"
+      },
+      {
+        "label": "Max Memory",
+        "value": "N/A"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB M.2 NVMe PCIe 3.0 SSD"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "1x M.2 2280 PCIe 3.0x2"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "720p HD camera With privacy shutter"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "SonicMaster"
+      },
+      {
+        "label": "Speaker",
+        "value": "• Built-in speaker\n• Built-in array microphone"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Home + Microsoft Office Home 2024 + Microsoft 365 Basic"
+      },
+      {
+        "label": "Ports",
+        "value": "1x USB 2.0 Type-A (data speed up to 480Mbps)\n1x USB 3.2 Gen 1 Type-A (data speed up to 5Gbps)\n1x USB 3.2 Gen 1 Type-C (data speed up to 5Gbps)\n1x HDMI 1.4"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x 3.5mm Combo Audio Jack"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax (Wi-Fi 6E)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Battery",
+        "value": "42WHrs, 3S1P, 3-cell Li-ion"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "ø4.5, 45W AC Adapter, Output: 19V DC, 2.37A, 45W, Input: 100~240V AC 50/60Hz universal"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 32.55 x 21.39 x 1.79 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "1.38 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 13.00 x 46.00 x 29.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "3.10 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "17,342.00 cm³"
+      },
+      {
+        "label": "Material",
+        "value": "• LCD cover-material : Plastic\n• Top case-material : Plastic\n• Bottom case-material : Plastic"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH Chiclet Keyboard"
+      },
+      {
+        "label": "Backlit",
+        "value": "N/A"
+      },
+      {
+        "label": "Touchpad",
+        "value": "• Precision touchpad\n• Support NumberPad"
+      },
+      {
+        "label": "Finger Print",
+        "value": "N/A"
+      },
+      {
+        "label": "warranty",
+        "value": "2-2-2"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174734/A0174734OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Microsoft Surface Laptop 7 15in Eli/16/256 ZHG-00022 (Platinum)",
+    "price": 51490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160943/A0160943OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook HP OmniBook 3 15-fn0077AU (Glacier Silver)",
+    "price": 24990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175015/A0175015OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook HP OmniBook 7 16-ay0008TX (Glacier Silver)",
+    "price": 49990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175017/A0175017OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook HP OmniBook 5 16-af1067TU (Sky Blue)",
+    "price": 23490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175022/A0175022OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 3 15ARP10 83K7009GTA (Luna Grey)",
+    "price": 19490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0174719/A0174719OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 3 15IRH10 83K100D8TA (Luna Grey)",
+    "price": 22990,
+    "salePrice": 20990,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167424/A0167424OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo Yoga Slim 7 14ILL10 83JX001GTA (Luna Grey)",
+    "price": 44990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169790/A0169790OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 5 16IAH10 83ND0018TA (Luna Grey)",
+    "price": 32990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172708/A0172708OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 3 15IRH10 83K100UYTA (Luna Grey)",
+    "price": 21990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178699/A0178699OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 5 16AGP11 83S2002DTA (Luna Grey)",
+    "price": 34990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180824/A0180824OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 5 16IMH 83DC004BTA (Cloud Grey)",
+    "price": 32490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160591/A0160591OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Aspire Lite 15 AL15-42P-R4PQ (Light Silver)",
+    "price": 15990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169276/A0169276OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 3 15IRU8 82X700G7TA (Arctic Grey)",
+    "price": 14990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171017/A0171017OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad Slim 5 16IMH9 83DC00A3TA (Cloud Grey)",
+    "price": 27990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0171020/A0171020OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Aspire Lite AL14-42P-R4UM (Light Silver)",
+    "price": 11990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177270/A0177270OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Aspire Lite AL15-54P-56RK (Light Silver)",
+    "price": 19990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0180633/A0180633OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Aspire Go 15 AG15-41P-R031 (Pure Silver)",
+    "price": 19990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0165648/A0165648OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook DELL DC15250I5081 (Platinum Silver)",
+    "price": 17990,
+    "salePrice": 16990,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170963/A0170963OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook DELL DC15250I5161 (Platinum Silver)",
+    "price": 18990,
+    "salePrice": 18200,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170964/A0170964OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Extensa 14 EXO14-71-50K3/T005 (Black)",
+    "price": 23900,
+    "salePrice": null,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "Acer"
+      },
+      {
+        "label": "Model",
+        "value": "Extensa EXO14-71-50K3/T005 (NX.EJUST.005)"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel Core Ultra 5 125H (1.2GHz, up to 4.5GHz, 14C/18T, 18MB Intel Smart Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "Intel SoC Platform"
+      },
+      {
+        "label": "CPU Series",
+        "value": "Core Ultra 5"
+      },
+      {
+        "label": "AI Engine",
+        "value": "Intel AI Boost"
+      },
+      {
+        "label": "Graphics",
+        "value": "Intel Arc Graphics (Integrated Graphics)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "14.0\" 1920x1200 (WUXGA), IPS, Acer ComfyView™ LED-backlit TFT LCD"
+      },
+      {
+        "label": "Main Memory",
+        "value": "16GB DDR5 SO-DIMM"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "2x DDR5 SO-DIMM slots"
+      },
+      {
+        "label": "Max Memory",
+        "value": "Up to 32GB"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB PCIe NVMe M.2 SSD"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "1x M.2 SSD (Occupied)"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "720p HD audio/video recording"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "HD Audio"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x Headphone/speaker jack"
+      },
+      {
+        "label": "Speaker",
+        "value": "Yes"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Pro"
+      },
+      {
+        "label": "Network",
+        "value": "10/100/1000 LAN"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.2"
+      },
+      {
+        "label": "Ports",
+        "value": "3x USB 3.2 port\n1x HDMI® port with HDCP support"
+      },
+      {
+        "label": "CardReader",
+        "value": "N/A"
+      },
+      {
+        "label": "Battery",
+        "value": "3-cell Li-ion battery"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "USB Type-C adapter"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 31.37 x 22.79 x 1.76 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "1.47 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 8.00 x 47.00 x 29.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "2.46 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "10,904.00 cm³"
+      },
+      {
+        "label": "Material",
+        "value": "N/A"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH Keyboard"
+      },
+      {
+        "label": "Backlit",
+        "value": "N/A"
+      },
+      {
+        "label": "Touchpad",
+        "value": "Yes"
+      },
+      {
+        "label": "Finger Print",
+        "value": "N/A"
+      },
+      {
+        "label": "warranty",
+        "value": "2-2-2"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172811/A0172811OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Aspire 16 AI A16-61MT-R7MF (Steel Gray)",
+    "price": 26990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178686/A0178686OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Aspire Lite 15 AL15-46P-R77X/T00 (Light Silver)",
+    "price": 12990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179683/A0179683OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Modern 15 B7M-435TH (Classic Black)",
+    "price": 13490,
+    "salePrice": 13090,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0163810/A0163810OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook DELL Inspiron 5445-OIN5445300401GTH (Ice Blue)",
+    "price": 18990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0164400/A0164400OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Venture 16 AI A3HMG-021TH (Solid Gray)",
+    "price": 28990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0168995/A0168995OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Venture A14 AI+ A3HMG-015TH (Solid Gray)",
+    "price": 24990,
+    "salePrice": null,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "MSI"
+      },
+      {
+        "label": "Model",
+        "value": "Venture A14 AI+ A3HMG-015TH"
+      },
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen AI 7 350 with AMD Ryzen™ AI (2.0GHz up to 5.0GHz, 8MB L2 Cache / 16MB L3 Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "AMD SoC Platform"
+      },
+      {
+        "label": "CPU Series",
+        "value": "Ryzen AI 7"
+      },
+      {
+        "label": "AI Engine",
+        "value": "AMD Ryzen™ AI\n• Overall TOPS: Up to 66 TOPS\n• NPU TOPs: Up to 50TOPS"
+      },
+      {
+        "label": "Graphics",
+        "value": "AMD Radeon Graphics (Integrated Graphics)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "16.0\" 2880x1800 (2.8K) OLED, 120Hz, 100% DCI-P3 (Typ.)"
+      },
+      {
+        "label": "Main Memory",
+        "value": "16GB (2x 8GB) DDR5 SODIMM"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "2x Slots"
+      },
+      {
+        "label": "Max Memory",
+        "value": "96GB"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB NVMe PCIe SSD Gen4x4 w/o DRAM"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "1x M.2 SSD slot (NVMe PCIe Gen4)"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "IR HD type (30fps@720p)"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "Hi-Res Audio"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x Mic-in/Headphone-out Combo Jack"
+      },
+      {
+        "label": "Speaker",
+        "value": "2x 2W Speaker"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Home + Microsoft Office Home 2024"
+      },
+      {
+        "label": "Ports",
+        "value": "1x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)\n2x Type-A USB3.2 Gen1\n1x HDMI™ 2.1 (4K @ 60Hz)"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax (Wi-Fi 6E)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Network",
+        "value": "10/100/1000 LAN"
+      },
+      {
+        "label": "CardReader",
+        "value": "N/A"
+      },
+      {
+        "label": "Battery",
+        "value": "4-Cell"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "90W adapter"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 31.56 x 23.55 x 2.16 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "1.70 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 13.00 x 53.00 x 34.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "0.00 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "23,426.00 cm³"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH Backlit Keyboard with Copilot Key"
+      },
+      {
+        "label": "Backlit",
+        "value": "Single Backlit (White)"
+      },
+      {
+        "label": "Touchpad",
+        "value": "Yes"
+      },
+      {
+        "label": "Finger Print",
+        "value": "N/A"
+      },
+      {
+        "label": "Material",
+        "value": "N/A"
+      },
+      {
+        "label": "warranty",
+        "value": "2Y"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169554/A0169554OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Commercial 14 B1MG-616THCP (Black)",
+    "price": 21990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178959/A0178959OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Raider  A18 HX A9WIG-071TH (Core Black)",
+    "price": 125990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_7.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167137/A0167137OK_BIG_8.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Crosshair 16 HX AI D2XWFKG-026TH (Cosmos Gray)",
+    "price": 54490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169523/A0169523OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Katana 17 HX B14WGK-202TH (Black)",
+    "price": 55990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170211/A0170211OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Katana 15 HX B14WFK-415TH (Black)",
+    "price": 51990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170218/A0170218OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Katana 15 HX B14WGK-417TH (Black)",
+    "price": 54490,
+    "salePrice": 48990,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "MSI"
+      },
+      {
+        "label": "Model",
+        "value": "Katana 15 HX (B14WGK-417TH)"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel Core i9-14900HX (2.2GHz, up to 5.8GHz, 36MB Intel Smart Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "Intel HM770"
+      },
+      {
+        "label": "CPU Series",
+        "value": "i9"
+      },
+      {
+        "label": "AI Engine",
+        "value": "None"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 5070 (8GB GDDR7)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "15.6\" 2560x1440 (QHD), IPS, 165Hz, 100% DCI-P3 typical"
+      },
+      {
+        "label": "Main Memory",
+        "value": "16GB (2x 8GB) DDR5"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "2x Slots"
+      },
+      {
+        "label": "Max Memory",
+        "value": "96GB"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB NVMe PCIe SSD Gen4x4 w/o DRAM"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "1x M.2 SSD slot (NVMe PCIe Gen4)"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "HD type (30fps@720p)"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "Hi-Res Audio"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x Mic-in/Headphone-out Combo Jack"
+      },
+      {
+        "label": "Speaker",
+        "value": "2x 2W Speaker"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Home + Microsoft Office Home 2024"
+      },
+      {
+        "label": "Network",
+        "value": "10/100/1000 LAN"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax (Wi-Fi 6E)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Ports",
+        "value": "1x Type-C (USB3.2 Gen2 / DisplayPort™/ Power Delivery 3.0)\n3x Type-A USB3.2 Gen2\n1x HDMI™ 2.1 (8K @ 60Hz / 4K @ 120Hz)"
+      },
+      {
+        "label": "CardReader",
+        "value": "None"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "240W adapter"
+      },
+      {
+        "label": "Battery",
+        "value": "4-Cell, 75 Battery (Whr)"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 35.90 x 26.20 x 25.50 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "2.40 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 14.00 x 48.00 x 31.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "4.96 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "20,832.00 cm³"
+      },
+      {
+        "label": "Material",
+        "value": "N/A"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH Gaming Keyboard with Copilot Key"
+      },
+      {
+        "label": "Backlit",
+        "value": "4-Zone RGB"
+      },
+      {
+        "label": "Touchpad",
+        "value": "Yes"
+      },
+      {
+        "label": "Finger Print",
+        "value": "N/A"
+      },
+      {
+        "label": "warranty",
+        "value": "2Y"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170216/A0170216OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Crosshair A17 HX D8WGKG-017TH (Cosmos Gray)",
+    "price": 59990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170330/A0170330OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Stealth A16 MercedesAMG AI+ A3XWGG-029TH (Star Blue)",
+    "price": 86990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170865/A0170865OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook MSI Thin A15 B7VE-658TH (Cosmos Gray)",
+    "price": 30990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178751/A0178751OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Gigabyte AORUS MASTER 16 BYHC5THE64SH (Dark Tide)",
+    "price": 107990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167169/A0167169OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Gigabyte AERO X16 1WH93THC94DH (White)",
+    "price": 55990,
+    "salePrice": null,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "GIGABYTE"
+      },
+      {
+        "label": "Model",
+        "value": "AERO X16 (1WH93THC94DH)"
+      },
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen AI 7 350 with AMD Ryzen™ AI (2.0GHz up to 5.0GHz, 8MB L2 Cache / 16MB L3 Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "N/A"
+      },
+      {
+        "label": "CPU Series",
+        "value": "Ryzen AI 7"
+      },
+      {
+        "label": "AI Engine",
+        "value": "AMD Ryzen™ AI"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 5070 (8GB GDDR7)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "16.0\" 2560x1600 (QHD+) 16:10, IPS, 165Hz, 3ms, 400nits (typical), 100% sRGB, TÜV Rheinland-certified, Pantone® Validated, MUX Switch"
+      },
+      {
+        "label": "Main Memory",
+        "value": "16GB (1x 16GB) DDR5 5600MHz"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "2x Slots"
+      },
+      {
+        "label": "Max Memory",
+        "value": "64GB"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB PCIe Gen4 NVMe M.2 SSD"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "2x M.2 SSD (1x PCIe Gen4 x4 Slot, 1x PCIe Gen4 x2 Slot)"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "• FHD (1080p) IR Webcam \n• Build-in array Microphone \n• Support Windows Hello Face Authentication"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "HD Audio"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x 3.5mm Audio Jack support mic / headphone combo"
+      },
+      {
+        "label": "Speaker",
+        "value": "2x 2W Speaker Microphone Dolby Atmos®"
+      },
+      {
+        "label": "Network",
+        "value": "10/100/1000 LAN"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax (Wi-Fi 6E)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.2"
+      },
+      {
+        "label": "Ports",
+        "value": "1x Type-C USB 4 support DisplayPort™ 1.4 and Power Delivery 3.0\n2x Type-A support USB 3.2 Gen 1\n1x Type-A support USB 2.0\n1x HDMI 2.1"
+      },
+      {
+        "label": "CardReader",
+        "value": "N/A"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "150W AC Adapter"
+      },
+      {
+        "label": "Battery",
+        "value": "Li Polymer 76Wh"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Home"
+      },
+      {
+        "label": "Material",
+        "value": "N/A"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH Backlit Keyboard, Up to 1.7mm Key-travel (Support N-Key)"
+      },
+      {
+        "label": "Backlit",
+        "value": "1-zone RGB"
+      },
+      {
+        "label": "Touchpad",
+        "value": "Yes"
+      },
+      {
+        "label": "Finger Print",
+        "value": "N/A"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 35.50 x 25.07 x 1.67 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "1.90 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 6.00 x 52.00 x 32.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "3.92 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "9,984.00 cm³"
+      },
+      {
+        "label": "warranty",
+        "value": "3-3-3"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170237/A0170237OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Asus ROG Strix G16 G614PR-RV003W (Volt Green)",
+    "price": 76990,
+    "salePrice": null,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "ASUS"
+      },
+      {
+        "label": "Model",
+        "value": "ROG Strix G16 (G614PR-RV003W)"
+      },
+      {
+        "label": "Processor",
+        "value": "AMD Ryzen 9 8940HX (2.4GHz up to 5.3GHz, 16MB L2 Cache / 64MB L3 Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "N/A"
+      },
+      {
+        "label": "CPU Series",
+        "value": "Ryzen 9"
+      },
+      {
+        "label": "AI Engine",
+        "value": "None"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 5070 Ti (12GB GDDR7)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "16.0\" 1920x1200 (WUXGA) 16:10, IPS, 165Hz, 3ms, 300nits, Anti-glare, 100% sRGB, G-Sync, Support Dolby Vision HDR"
+      },
+      {
+        "label": "Main Memory",
+        "value": "32GB (2x 16GB) DDR5-5200 SO-DIMM"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "2x DDR5 SO-DIMM slots"
+      },
+      {
+        "label": "Max Memory",
+        "value": "Up to 64GB"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB PCIe 4.0 NVMe M.2 SSD"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "2x M.2 PCIe SSD"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "• 1080P FHD camera\n• Built-in array microphone"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "• AI noise-canceling technology\n• Dolby Atmos\n• Hi-Res certification (for headphone)\n• Smart Amp Technology"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x 3.5mm Combo Audio Jack"
+      },
+      {
+        "label": "Speaker",
+        "value": "2-speaker system with Smart Amplifier Technology"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Home"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH Backlit Chiclet Keyboard With Copilot key"
+      },
+      {
+        "label": "Backlit",
+        "value": "4-Zone RGB"
+      },
+      {
+        "label": "Special Feature",
+        "value": "Aura Sync"
+      },
+      {
+        "label": "Network",
+        "value": "10/100/1000 LAN"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax (Wi-Fi 6E)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Ports",
+        "value": "1x Type-C USB 4 with support for DisplayPort™ / G-SYNC (data speed up to 40Gbps)\n1x Type-C USB 4 with support for DisplayPort™ / power delivery / G-SYNC (data speed up to 40Gbps)\n2x USB 3.2 Gen 2 Type-A (data speed up to 10Gbps)\n1x HDMI 2.1 FRL"
+      },
+      {
+        "label": "CardReader",
+        "value": "None"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "ø6.0, 280W AC Adapter, Output: 20V DC, 14A, 280W, Input: 100~240C AC 50/60Hz universal"
+      },
+      {
+        "label": "Battery",
+        "value": "90WHrs, 4S1P, 4-cell Li-ion"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 35.40 x 26.40 x 3.04 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "2.50 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 10.00 x 33.00 x 42.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "4.62 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "13,860.00 cm³"
+      },
+      {
+        "label": "Material",
+        "value": "N/A"
+      },
+      {
+        "label": "Touchpad",
+        "value": "Yes"
+      },
+      {
+        "label": "Finger Print",
+        "value": "N/A"
+      },
+      {
+        "label": "warranty",
+        "value": "3-3-3"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169639/A0169639OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Asus TUF Gaming F16 FX607VJB-RL143W (Mecha Gray)",
+    "price": 30990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179734/A0179734OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Asus TUF Gaming F16 FX607VU-RV058W (Mecha Gray)",
+    "price": 33990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0167426/A0167426OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo Legion Pro 7 16IAX10H 83F5004DTA (Eclipse Black)",
+    "price": 116990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_7.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169453/A0169453OK_BIG_8.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Predator Helios Neo 18 AI PHN18-72-945W (Abyssal black)",
+    "price": 82990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170954/A0170954OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo LOQ 15IRX10 83JE00MGTA (Luna Grey)",
+    "price": 40990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172900/A0172900OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Predator Helios Neo 16S PHN16S-71-529C (Abyssal Black)",
+    "price": 47990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172414/A0172414OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Nitro V 16S AI ANV16S-41-R7N6 (Obsidian Black)",
+    "price": 37990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0172417/A0172417OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo LOQ 15IRX9 83DV01A0TA (Luna Grey)",
+    "price": 27490,
+    "salePrice": null,
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "LENOVO"
+      },
+      {
+        "label": "Model",
+        "value": "LOQ 15IRX9 (83DV01A0TA)"
+      },
+      {
+        "label": "Processor",
+        "value": "Intel Core i5-13450HX (2.4GHz up to 4.6GHz, 20MB Intel Smart Cache)"
+      },
+      {
+        "label": "Chipset",
+        "value": "Intel HM770 Chipset"
+      },
+      {
+        "label": "CPU Series",
+        "value": "i5"
+      },
+      {
+        "label": "AI Engine",
+        "value": "None"
+      },
+      {
+        "label": "Graphics",
+        "value": "NVIDIA GeForce RTX 3050 (6GB GDDR6)"
+      },
+      {
+        "label": "Display Screen",
+        "value": "15.6\" 1920x1080 (FHD), IPS, 144Hz, 300nits, Anti-glare, 100% sRGB, G-SYNC"
+      },
+      {
+        "label": "Main Memory",
+        "value": "16GB (1x 16GB) DDR5-4800 SODIMM"
+      },
+      {
+        "label": "Memory Slot",
+        "value": "2x DDR5 SO-DIMM slots, dual-channel capable"
+      },
+      {
+        "label": "Max Memory",
+        "value": "Up to 32GB DDR5-4800"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe"
+      },
+      {
+        "label": "Storage Slot",
+        "value": "2x M.2 2280 PCIe® 4.0 x4 slots"
+      },
+      {
+        "label": "Optical Disk Drive",
+        "value": "None"
+      },
+      {
+        "label": "Web Camera",
+        "value": "• HD 720p with E-shutter\n• 2x, Array Microphone"
+      },
+      {
+        "label": "Sound Technology",
+        "value": "High Definition (HD) Audio, Realtek ALC3287 codec"
+      },
+      {
+        "label": "Audio Jack",
+        "value": "1x Headphone / microphone combo jack (3.5mm)"
+      },
+      {
+        "label": "Speaker",
+        "value": "Stereo speakers, 2W x2, optimized with Nahimic Audio"
+      },
+      {
+        "label": "Network",
+        "value": "10/100/1000 LAN"
+      },
+      {
+        "label": "Wireless",
+        "value": "Wireless 802.11ax (Wi-Fi 6)"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5.2"
+      },
+      {
+        "label": "Ports",
+        "value": "1x USB-C (USB 10Gbps / USB 3.2 Gen 2), with Lenovo PD 140W and DisplayPort 1.4\n3x USB-A (USB 5Gbps / USB 3.2 Gen 1)\n1x HDMI 2.1, up to 8K/60Hz"
+      },
+      {
+        "label": "CardReader",
+        "value": "None"
+      },
+      {
+        "label": "Power Adapter",
+        "value": "170W Slim Tip (3-pin)"
+      },
+      {
+        "label": "Battery",
+        "value": "Integrated 60Wh"
+      },
+      {
+        "label": "Dimension (cm)",
+        "value": "(W x L x H) : 35.98 x 25.87 x 2.39 cm"
+      },
+      {
+        "label": "Net Weight (kg)",
+        "value": "2.38 kg"
+      },
+      {
+        "label": "Package Dimension (cm)",
+        "value": "(W x L x H) : 8.00 x 54.00 x 35.00 cm"
+      },
+      {
+        "label": "Gross Weight (kg)",
+        "value": "3.56 kg"
+      },
+      {
+        "label": "Volume (cm³)",
+        "value": "15,120.00 cm³"
+      },
+      {
+        "label": "Material",
+        "value": "PC-ABS (Top), PC-ABS (Bottom)"
+      },
+      {
+        "label": "Keyboard Type",
+        "value": "ENG/TH, 6-row, multimedia Fn keys, numeric keypad"
+      },
+      {
+        "label": "Backlit",
+        "value": "4-Zone RGB backlight"
+      },
+      {
+        "label": "Touchpad",
+        "value": "Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP)"
+      },
+      {
+        "label": "Finger Print",
+        "value": "None"
+      },
+      {
+        "label": "OS",
+        "value": "Windows 11 Home"
+      },
+      {
+        "label": "warranty",
+        "value": "2-2-2"
+      }
+    ],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0173651/A0173651OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo Legion 5 15IRX10 83LY00HGTA (Eclipse Black)",
+    "price": 46490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0176348/A0176348OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Acer Nitro V 15 ANV15-42-R015 (Obsidian black)",
+    "price": 28990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177128/A0177128OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo LOQ 15ARP9 83JC00LGTA (Luna Grey)",
+    "price": 27990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175324/A0175324OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo LOQ 15IAX9E 83LK00E6TA (Luna Grey)",
+    "price": 28990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179056/A0179056OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo Legion 5 15AHP10 83M0005DTA (Eclipse Black)",
+    "price": 48990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178740/A0178740OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo LOQ Essential 15IRX11 83SC003GTA (Luna Grey)",
+    "price": 35990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0177254/A0177254OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo LOQ 15ARP10E 83S0001GTA (Luna Grey)",
+    "price": 30490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179108/A0179108OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo Legion 7 16IAX10 83KY005JTA (Glacier White)",
+    "price": 77990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0179980/A0179980OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Microsoft Surface Pro 11 Eli/16/512 ZIA-00034 (Black)",
+    "price": 58490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0160949/A0160949OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160949/A0160949OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160949/A0160949OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160949/A0160949OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160949/A0160949OK_BIG_5.jpg\"]"
+  },
+  {
+    "name": "Notebook Microsoft Surface Pro 11 Pls/16/256 (ZHX-00017) (Platinum)",
+    "price": 40990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0160945/A0160945OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160945/A0160945OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160945/A0160945OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160945/A0160945OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160945/A0160945OK_BIG_5.jpg\"]"
+  },
+  {
+    "name": "Notebook Microsoft Surface Pro 11 Eli/16/512 ZIA-00017 (Platinum)",
+    "price": 58490,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0160948/A0160948OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160948/A0160948OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160948/A0160948OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160948/A0160948OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0160948/A0160948OK_BIG_5.jpg\"]"
+  },
+  {
+    "name": "Notebook HP Victus 15-fb3087AX (Mica Silver)",
+    "price": 26990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169333/A0169333OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook HP Victus 15-fb3086AX (Mica Silver)",
+    "price": 29990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169334/A0169334OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook Microsoft Surface Pro 12-inch 16/512 EP2-27673 (Platinum)",
+    "price": 42990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0170433/A0170433OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170433/A0170433OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170433/A0170433OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170433/A0170433OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170433/A0170433OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0170433/A0170433OK_BIG_6.jpg\"]"
+  },
+  {
+    "name": "Notebook Lenovo IdeaPad 5 14AKP10 83KT000DTA (Luna Grey)",
+    "price": 32990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_7.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0169787/A0169787OK_BIG_8.jpg\"]"
+  },
+  {
+    "name": "Notebook HP Victus 15-fa2387TX (Mica Silver)",
+    "price": 37990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0175007/A0175007OK_BIG_7.jpg\"]"
+  },
+  {
+    "name": "Notebook HP Victus 15-fa2457TX (Mica Silver)",
+    "price": 30990,
+    "salePrice": null,
+    "specs": [],
+    "features": [],
+    "stock": 99,
+    "images": "[\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_1.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_2.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_3.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_4.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_5.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_6.jpg\",\"https://img.advice.co.th/images_nas/pic_product4/A0178987/A0178987OK_BIG_7.jpg\"]"
+  }
+]
