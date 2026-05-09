@@ -7,7 +7,8 @@ dotenv.config();
 
 const API_URL =
   process.env.API_URL || "https://kweelamin.com/api/admin/sync/advice";
-const SYNC_SECRET = process.env.SYNC_SECRET;
+// const SYNC_SECRET = process.env.SYNC_SECRET;
+const SYNC_SECRET = "gWkE7OYh78Kaid/YdLXno23CKFrkY4QDKuWRAwIBLQQ=";
 
 const log = (m: string) => console.log(`[${new Date().toISOString()}] ${m}`);
 

@@ -43,6 +43,19 @@ puppeteer.use(StealthPlugin());
 
 async function syncProducts() {
   log("🚀 Starting Local Advice Scraper...");
+
+  // Basic Network Check
+  try {
+    const dns = require("dns").promises;
+    await dns.lookup("www.advice.co.th");
+    log("✅ DNS resolution for www.advice.co.th successful.");
+  } catch (dnsErr) {
+    log(
+      `❌ DNS Resolution Error: Could not resolve www.advice.co.th. Please check your internet connection or DNS settings. Error: ${dnsErr.message}`,
+    );
+    // We'll still try to continue, but this provides a clearer error message
+  }
+
   if (!SYNC_SECRET) {
     log("⚠️ WARNING: SYNC_SECRET is not defined in environment variables!");
   } else {
@@ -67,18 +80,44 @@ async function syncProducts() {
       "--disable-web-security",
       "--disable-features=IsolateOrigins,site-per-process",
       "--disable-blink-features=AutomationControlled", // Mask automation
+      "--ignore-certificate-errors",
+      "--allow-running-insecure-content",
+      "--disable-dns-over-https",
+      "--disable-dns-prefetch",
+      "--no-proxy-server",
+      "--proxy-server='direct://'",
+      "--proxy-bypass-list='*'",
     ],
     protocolTimeout: 600000, // Increased to 10 minutes
   };
 
   // Add proxy if configured in env
-  if (process.env.FLARESOLVERR_URL) {
+  if (
+    process.env.FLARESOLVERR_URL &&
+    process.env.FLARESOLVERR_URL.startsWith("ws")
+  ) {
     launchOptions.browserWSEndpoint = `${process.env.FLARESOLVERR_URL}`;
   } else if (process.env.PROXY_SERVER) {
     launchOptions.args.push(`--proxy-server=${process.env.PROXY_SERVER}`);
   }
 
-  const browser = await puppeteer.launch(launchOptions);
+  let browser;
+  try {
+    if (launchOptions.browserWSEndpoint) {
+      log(
+        `Connecting to existing browser at ${launchOptions.browserWSEndpoint}...`,
+      );
+      browser = await puppeteer.connect({
+        browserWSEndpoint: launchOptions.browserWSEndpoint,
+      });
+    } else {
+      log("Launching new browser...");
+      browser = await puppeteer.launch(launchOptions);
+    }
+  } catch (launchErr) {
+    log(`❌ Failed to start/connect browser: ${launchErr}`);
+    throw launchErr;
+  }
 
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 });
@@ -122,6 +161,12 @@ async function syncProducts() {
       }
     }
     if (!homePageSuccess) {
+      log(
+        "❌ Failed to load home page after retries. This might be a DNS issue or a corrupted browser profile.",
+      );
+      log(
+        "👉 TIP: Try deleting the 'chrome_user_data' folder in your project directory and run again.",
+      );
       throw new Error("Failed to load home page after retries");
     }
 
@@ -898,7 +943,8 @@ async function syncProducts() {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              "x-sync-secret": SYNC_SECRET || "",
+              // "x-sync-secret": SYNC_SECRET || "",
+              "x-sync-secret": "gWkE7OYh78Kaid/YdLXno23CKFrkY4QDKuWRAwIBLQQ=",
               "User-Agent": USER_AGENT,
             },
             body: body,
